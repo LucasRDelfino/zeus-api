@@ -9,7 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class WeatherResponse {
     private String cidade;
-    private double velocidadeVento; // em km/h
+    private double velocidadeVento;
+    private double rajadaVento;
+    private int coberturaNuvens;
+    private double volumeChuva;
     private String descricao;
     private int umidade;
 }

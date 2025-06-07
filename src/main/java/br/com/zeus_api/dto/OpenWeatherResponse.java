@@ -10,6 +10,8 @@ public class OpenWeatherResponse {
     private Map<String, Object> wind;
     private List<Map<String, Object>> weather;
     private Map<String, Object> main;
+    private Map<String, Object> clouds;
+    private Map<String, Object> rain;
     private String name;
 }
 

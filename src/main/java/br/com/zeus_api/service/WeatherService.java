@@ -35,10 +35,23 @@ public class WeatherService {
         }
 
         double velocidadeVento = ((Number) response.getWind().getOrDefault("speed", 0)).doubleValue() * 3.6;
+        double rajadaVento = ((Number) response.getWind().getOrDefault("gust", 0)).doubleValue() * 3.6;
+        int coberturaNuvens = ((Number) response.getClouds().getOrDefault("all", 0)).intValue();
+        double volumeChuva = response.getRain() != null ?
+                ((Number) response.getRain().getOrDefault("1h", 0)).doubleValue() :
+                0.0;
         String descricao = (String) response.getWeather().get(0).get("description");
         String nomeCidade = response.getName();
         int umidade = ((Number) response.getMain().getOrDefault("humidity", 0)).intValue();
 
-        return new WeatherResponse(nomeCidade, velocidadeVento, descricao, umidade);
+        return new WeatherResponse(
+                nomeCidade,
+                velocidadeVento,
+                rajadaVento,
+                coberturaNuvens,
+                volumeChuva,
+                descricao,
+                umidade
+        );
     }
 }
