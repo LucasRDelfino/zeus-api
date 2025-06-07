@@ -71,7 +71,7 @@ A **Plataforma Zeus** oferece uma solução completa para monitoramento de **inf
 ---
 
 ## Integrantes
-Lucas Rodrigues Delfino - RM550196
-Luisa Cristina dos Santos Neves - RM551889
-Gabriel aparecido Cassalho Xavier - RM99794
+- Lucas Rodrigues Delfino - RM550196
+- Luisa Cristina dos Santos Neves - RM551889
+- Gabriel aparecido Cassalho Xavier - RM99794
 
